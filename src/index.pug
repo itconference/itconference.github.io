@@ -9,18 +9,25 @@ html(lang="en")
     meta(name="robots" content="index,follow")
     link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css")
     link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js")
+    link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js")
     script(defer src="//use.fontawesome.com/releases/v5.0.10/js/all.js")
     style.
       * {
-        font-family: Lato;
+        font-family: Oswald;
       }
       .avatar {
         -webkit-filter: grayscale(100%); 
         filter: grayscale(100%);
         border-radius: 50%;
       }
+
+      div.detail {
+        height: 2em;
+      }
   body
+    script(type="text/javascript") (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49303816 = new Ya.Metrika2({ id:49303816, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2");
+    noscript: div: img(src="https://mc.yandex.ru/watch/49303816" style="position:absolute; left:-9999px;" alt="")
     #fb-root
     script.
       (function(d, s, id) {
@@ -56,14 +63,14 @@ html(lang="en")
                           figure.image.is-48x48
                             img(src=`https://avatars.io/twitter/${conference.twitter}`)
                         .media-content
-                          p.title.is-4=conference.name
+                          p.title.is-4: a.has-text-black(targe="_blank" href=conference.website)=conference.name
                           p.subtitle.is-6: a.has-text-black.is-lowercase(href=`https://twitter.com/${conference.twitter}` target="_blank") @#{conference.twitter}
                       nav.level
                         .level-item.has-text-centered
                           div
                             p.heading Rating
-                            p.is-size-3
-                              span.fa-layers.fa-fw
+                            .detail
+                              span.fa-layers.fa-fw.is-size-3
                                 case conference.rating
                                   when 'A+'
                                     i.fas.fa-circle.has-text-primary
@@ -93,23 +100,23 @@ html(lang="en")
                         .level-item.has-text-centered
                           div
                             p.heading Location
-                            p.title.is-size-6 
+                            .detail
                               span.flag-icon.flag-icon-squared(class=`flag-icon-${conference.country.toLowerCase()}`)
                               span  #{conference.city}
                         .level-item.has-text-centered
                           div
                             p.heading Next event
                             if conference.scheduled
-                              p.title.is-size-6=conference.scheduled.date
+                              .detail=conference.scheduled.date
                             else 
-                              p.title.is-size-6 TBA
+                              .detail TBA
                         .level-item.has-text-centered
                           div
                             p.heading Price
                             if conference.scheduled
-                              p.title.is-size-6 #{conference.scheduled.price}€
+                              .detail #{conference.scheduled.price}€
                             else
-                              p.title.is-size-6 TBA
+                              .detail TBA
                       .tags
                         each tag in conference.tags
                           span.tag.is-uppercase=tag
@@ -151,9 +158,9 @@ html(lang="en")
                         if conference.speakers
                           h1.is-4.title Who spoke here  
                         if conference.speakers  
-                          .columns.is-multiline
+                          .columns.is-multiline.is-mobile
                             each speaker in conference.speakers
-                              .column
+                              .column.is-narrow
                                 figure.image.is-48x48
                                   a(target="_blank" href=`https://twitter.com/${speaker}`): img.avatar(src=`https://avatars.io/twitter/${speaker}`)
     footer.footer
