@@ -2,6 +2,7 @@
 conferences:
   - name: Craft Conference
     twitter: craftconf
+    video: //player.vimeo.com/video/219539711
     country: HU
     city: Budapest        
     website: https://craft-conf.com
@@ -31,6 +32,7 @@ conferences:
 
   - name: DevTernity
     twitter: devternity
+    video: //player.vimeo.com/video/247773795
     rating: A
     country: LV
     city: Riga    
@@ -146,6 +148,7 @@ conferences:
 
   - name: Build Stuff Lithuania
     twitter: buildstufflt
+    video: //youtube.com/embed/EUq2SrKXzQc
     rating: B
     country: LT
     city: Vilnius
@@ -186,6 +189,7 @@ conferences:
 
   - name: JavaZone
     twitter: javazone
+    video: //youtube.com/embed/OKZcwxcw85o
     rating: B-
     country: NO
     city: Oslo
@@ -227,6 +231,7 @@ conferences:
 
   - name: Riga Dev Days
     twitter: rigadevdays
+    video: //youtube.com/embed/tK6IwMIb0Zk
     rating: C+
     country: LV
     city: Riga

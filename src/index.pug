@@ -16,6 +16,22 @@ html(lang="en")
       * {
         font-family: Oswald;
       }
+
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+      }
+
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }      
+
       .avatar {
         -webkit-filter: grayscale(100%); 
         filter: grayscale(100%);
@@ -126,6 +142,8 @@ html(lang="en")
                           span.tag.is-uppercase=tag
                       p.content=conference.description
                       .buttons
+                        if conference.video
+                          a.button.watchVideo(data-link=conference.video) Watch video
                         if conference.scheduled
                           a.button.is-primary(target="_blank" href=conference.website) Register
                         else
@@ -167,6 +185,13 @@ html(lang="en")
                               .column.is-narrow
                                 figure.image.is-48x48
                                   a(target="_blank" href=`https://twitter.com/${speaker}`): img.avatar(src=`https://avatars.io/twitter/${speaker}`)
+    #modal.modal
+      .modal-background
+      .modal-content
+        .videoWrapper
+          iframe#frame(width="560" height="349" name="video" frameborder="0")  
+      button#modal-close.modal-close.is-large(aria-label="close")
+  
     footer.footer
       .container
         .content.has-text-centered
@@ -181,3 +206,27 @@ html(lang="en")
             a(href="mailto:hello@itconference.top") Send us
             |  an email!
           p itconference.top @ #{year}
+    script.
+      function closeModal() {
+        var modal = document.getElementById("modal")
+        modal.className = modal.className.replace(/\bis-active\b/g, "")
+      }      
+
+      var modalClose = document.getElementById("modal-close");
+      modalClose.addEventListener("click", closeModal);
+
+      function watch(e) {
+        var videoLink = e.target.getAttribute("data-link")
+        var modal = document.getElementById("modal")
+        var name = 'is-active'
+        var arr = modal.className.split(" ");
+        if (arr.indexOf(name) == -1) {
+          modal.className += " " + name;
+        }
+
+        document.getElementById("frame").setAttribute("src", videoLink)
+      }
+      var watchVideoButtons = document.getElementsByClassName("watchVideo")
+      for (var i = 0; i < watchVideoButtons.length; i++) {
+        watchVideoButtons[i].addEventListener("click", watch);
+      }
