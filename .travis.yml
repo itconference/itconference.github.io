@@ -1,0 +1,17 @@
+language: node_js
+branches:
+  only:
+   - master
+before_install:
+  - npm i yarn -g
+script:
+  - yarn
+  - yarn build
+deploy:
+  provider: pages
+  local-dir: dist
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  
+  keep-history: true
+  on:
+    branch: master

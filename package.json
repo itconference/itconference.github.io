@@ -1,0 +1,49 @@
+{
+  "name": "dev-tube-web",
+  "description": "Dev.Tube Web",
+  "version": "1.0.0",
+  "author": "Eduards Sizovs <eduards@devternity.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env webpack-dev-server --hot --mode=development",
+    "build": "cross-env webpack --progress --hide-modules --mode=production"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dayjs": "^1.5.16",
+    "pug-loader": "^2.4.0",
+    "vue": "^2.2.1",
+    "vue-async-computed": "^3.3.1",
+    "vue-delay": "^0.1.0",
+    "vue-instantsearch": "1.4.0",
+    "vue-meta": "^1.5.0",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-latest": "^6.0.0",
+    "cname-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "js-yaml": "^3.12.0",
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "pug-static-loader": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "source-loader": "^1.0.0",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^4.6.0",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3",
+    "write-file-webpack-plugin": "^4.3.1"
+  }
+}

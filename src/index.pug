@@ -1,0 +1,172 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title IT Conference Top — The best developer conferences in Europe
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="keywords" content="")
+    meta(name="robots" content="index,follow")
+    link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css")
+    link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js")
+    script(defer src="//use.fontawesome.com/releases/v5.0.10/js/all.js")
+    style.
+      * {
+        font-family: Lato;
+      }
+      .avatar {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+        border-radius: 50%;
+      }
+  body
+    #fb-root
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=433199826742778&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    header
+      section.hero.is-primary
+        .hero-body
+          .container
+            .columns
+              .column.is-narrow
+                img.is-inline.logo.image.is-64x64(src="./primary-logo.png")
+              .column
+                h1.title IT Conference Top
+                h2.subtitle We make it easier to choose a tech conference.
+    section.section
+      .container
+        .columns
+          .column.is-12
+            h1.subtitle.is-3 European developer conferences
+            h2.subtitle.is-5 The best conferences to attend in #{year} are shown at the top
+            each conference in conferences
+              .card
+                .card-content
+                  .columns
+                    .column.is-8
+                      .media
+                        .media-left
+                          figure.image.is-48x48
+                            img(src=`https://avatars.io/twitter/${conference.twitter}`)
+                        .media-content
+                          p.title.is-4=conference.name
+                          p.subtitle.is-6: a.has-text-black.is-lowercase(href=`https://twitter.com/${conference.twitter}` target="_blank") @#{conference.twitter}
+                      nav.level
+                        .level-item.has-text-centered
+                          div
+                            p.heading Rating
+                            p.is-size-3
+                              span.fa-layers.fa-fw
+                                case conference.rating
+                                  when 'A+'
+                                    i.fas.fa-circle.has-text-primary
+                                  when 'A'
+                                    i.fas.fa-circle.has-text-primary
+                                  when 'A-'
+                                    i.fas.fa-circle.has-text-primary                                      
+                                  when 'B+'
+                                    i.fas.fa-circle.has-text-primary
+                                  when 'B'
+                                    i.fas.fa-circle.has-text-primary
+                                  when 'B-'
+                                    i.fas.fa-circle.has-text-primary
+                                  when 'C+'
+                                    i.fas.fa-circle.has-text-warning
+                                  when 'C'
+                                    i.fas.fa-circle.has-text-warning
+                                  when 'C-'
+                                    i.fas.fa-circle.has-text-warning
+                                  when 'D+'
+                                    i.fas.fa-circle.has-text-danger 
+                                  when 'D'
+                                    i.fas.fa-circle.has-text-danger 
+                                  when 'D-'
+                                    i.fas.fa-circle.has-text-danger                                       
+                                span.fa-layers-text.fa-inverse(data-fa-transform="shrink-8")=conference.rating
+                        .level-item.has-text-centered
+                          div
+                            p.heading Location
+                            p.title.is-size-6 
+                              span.flag-icon.flag-icon-squared(class=`flag-icon-${conference.country.toLowerCase()}`)
+                              span  #{conference.city}
+                        .level-item.has-text-centered
+                          div
+                            p.heading Next event
+                            if conference.scheduled
+                              p.title.is-size-6=conference.scheduled.date
+                            else 
+                              p.title.is-size-6 TBA
+                        .level-item.has-text-centered
+                          div
+                            p.heading Price
+                            if conference.scheduled
+                              p.title.is-size-6 #{conference.scheduled.price}€
+                            else
+                              p.title.is-size-6 TBA
+                      .tags
+                        each tag in conference.tags
+                          span.tag.is-uppercase=tag
+                      p.content=conference.description
+                      .buttons
+                        if conference.scheduled
+                          a.button.is-primary(target="_blank" href=conference.website) Register
+                        else
+                          a.button.is-primary.is-outlined(target="_blank" href=conference.website) Visit website
+                    .column.is-4(style="border-left: 1px solid #f5f5f5")
+                        mixin rating(stars)
+                          if stars
+                            - var color = stars <= 2 ? 'has-text-danger' : stars < 4 ? 'has-text-warning' : 'has-text-primary'          
+                              each _, i in Array(stars)
+                                i.fas.fa-star(class=color)
+                              each _, i in Array(5-stars)
+                                i.far.fa-star.has-text-grey-lighter
+                          else
+                            | —
+                        h1.is-4.title Detailed rating
+                        .columns.is-gapless.is-marginless
+                          .column.is-uppercase Talks  
+                          .column: +rating(conference.ratingBreakdown.talks)
+                        .columns.is-gapless.is-marginless
+                          .column.is-uppercase Workshops 
+                          .column: +rating(conference.ratingBreakdown.workshops)
+                        .columns.is-gapless.is-marginless
+                          .column.is-uppercase Organization 
+                          .column: +rating(conference.ratingBreakdown.org)                          
+                        .columns.is-gapless.is-marginless
+                          .column.is-uppercase Venue 
+                          .column: +rating(conference.ratingBreakdown.location)                                 
+                        .columns.is-gapless.is-marginless
+                          .column.is-uppercase Ticket Price 
+                          .column: +rating(conference.ratingBreakdown.ticket)
+                        .columns.is-gapless
+                          .column.is-uppercase Travel Expenses 
+                          .column: +rating(conference.ratingBreakdown.travel)
+                        if conference.speakers
+                          h1.is-4.title Who spoke here  
+                        if conference.speakers  
+                          .columns.is-multiline
+                            each speaker in conference.speakers
+                              .column
+                                figure.image.is-48x48
+                                  a(target="_blank" href=`https://twitter.com/${speaker}`): img.avatar(src=`https://avatars.io/twitter/${speaker}`)
+    footer.footer
+      .container
+        .content.has-text-centered
+          p This service has been developed and maintained by the independent community of software developers from Sweden and Berlin. We believe that too many conferences claim to be good, but it's far from the truth.
+          p 
+            | Our 
+            b opinionated 
+            | ranking formula is based on multiple factors. The factors include, but are not limited to: verified social network reviews (google, facebook, trustpilot, blog posts), sentiment analysis, what attendees say to us, customer service, price vs. quality ratio, our expert opinion (if we attended the conference).
+          p We'd also like to thank amazing people who invest time in writing feedback and online reviews. Thanks to you, services like this can emerge.
+          p 
+            | Have questions? 
+            a(href="mailto:hello@itconference.top") Send us
+            |  an email!
+          p itconference.top @ #{year}
