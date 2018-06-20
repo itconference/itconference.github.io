@@ -173,7 +173,7 @@ conferences:
     country: DE
     city: Berlin
     website: https://gotober.com
-    description: GOTO Conference is a software development conference designed for developers, team leads, architects, and project managers and is organized "for developers by developers". As software developers and architects ourselves, we wanted to create a great social and learning experience.
+    description: GOTO Conference is a software development conference designed for developers, team leads, architects, and project managers and is organized "for developers by developers". The content is very diverse and thought-provoking. The conference also allows you to meet new people easily, because there is plenty of breaks and room available between sessions to have a chat with others and hang out at one of the exhibitioners booths.
     scheduled: 
         date: 29 Oct 2018
         price: 549 – 2745
@@ -236,7 +236,7 @@ conferences:
     country: LV
     city: Riga
     website: https://rigadevdays.lv
-    description: Riga Dev Days brings together the world class experts in Java, .NET, SQL Databases, Microservices and Cloud technologies to Riga for 3 days of sessions, workshops and showcases. At Riga Dev Days you will enjoy quality content in a comfortable atmosphere in a cinema theater. It's the best place for learning new technologies, sharing experience and meeting IT colleagues. Riga is easy to reach and is relatively cheap location. Riga Dev Days is offering compelling pricing. Unfortunately, attendees say that many talks are of low-to-medium quality.
+    description: Riga Dev Days brings together the world class experts in Java, .NET, SQL Databases, Microservices and Cloud technologies to Riga for 3 days of sessions, workshops and showcases. At Riga Dev Days you will enjoy quality content in a comfortable atmosphere in a cinema theater. It's the best place for learning new technologies, sharing experience and meeting IT colleagues. Riga is easy to reach and is relatively cheap location. Riga Dev Days is offering compelling pricing. Unfortunately, attendees say that many talks are "filler talks" of low-to-medium quality.
     tags:
       - java
       - jvm
