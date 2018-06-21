@@ -65,6 +65,31 @@ html(lang="en")
       div.detail {
         height: 2em;
       }
+    script.
+      "use strict";
+
+      !function() {
+        var t = window.driftt = window.drift = window.driftt || [];
+        if (!t.init) {
+          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+        }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('6hyry79ezi87');      
   body
     script(type="text/javascript") (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49303816 = new Ya.Metrika2({ id:49303816, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2");
     noscript: div: img(src="https://mc.yandex.ru/watch/49303816" style="position:absolute; left:-9999px;" alt="")
@@ -226,7 +251,7 @@ html(lang="en")
             a(href="mailto:hello@itconference.top") Send us
             |  an email!
           p itconference.top @ #{year}
-    script.
+    script(type="text/javascript").
       function closeModal() {
         var modal = document.getElementById("modal")
         modal.className = modal.className.replace(/\bis-active\b/g, "")
