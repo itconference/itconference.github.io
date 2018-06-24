@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
   head
     - var title = "IT Conference Top — We make it easier to choose a tech conference."
-    - var desc = "Choosing a great developer conference is time-consuming. Too many conferences claim to be good, but it's far from the truth. We make it easier to choose a tech conference by giving each conference rating from A+ to F-."
+    - var desc = "Choosing a great developer conference is time-consuming. Too many conferences claim to be the best, but it's far from the truth. We make it easier to choose a tech conference by giving each conference rating from A+ (the best) to F- (the worst)."
     meta(charset="UTF-8")
     title=title
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -112,12 +112,20 @@ html(lang="en")
               .column
                 h1.title IT Conference Top
                 h2.subtitle We make it easier to choose a tech conference.
+              .column.has-text-right
+                h2.subtitle
+                  i.fas.fa-users
+                  |  Trusted by 
+                  b 53,000 
+                  | monthly visitors.
     section.section
       .container
         .columns
           .column.is-12
-            h1.subtitle.is-3 European developer conferences
-            h2.subtitle.is-5 The best conferences to attend in #{year} are shown at the top
+            article.message.is-primary
+              .message-body
+                p=desc
+            h2.subtitle.is-5 The best European developer conferences to attend in #{year}
             each conference in conferences
               .card
                 .card-content
