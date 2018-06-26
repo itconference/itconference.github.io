@@ -134,7 +134,10 @@ html(lang="en")
                       .media
                         .media-left
                           figure.image.is-48x48
-                            img(src=`https://avatars.io/twitter/${conference.twitter}`)
+                            if conference.logo
+                              img(src=conference.logo)
+                            else
+                              img(src=`https://avatars.io/twitter/${conference.twitter}`)
                         .media-content
                           p.title.is-4: a.has-text-black(targe="_blank" href=conference.website)=conference.name
                           p.subtitle.is-6: a.has-text-black.is-lowercase(href=`https://twitter.com/${conference.twitter}` target="_blank") @#{conference.twitter}
