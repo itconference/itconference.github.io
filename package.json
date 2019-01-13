@@ -1,8 +1,8 @@
 {
-  "name": "dev-tube-web",
-  "description": "Dev.Tube Web",
+  "name": "yada-web",
+  "description": "Yada Web",
   "version": "1.0.0",
-  "author": "Eduards Sizovs <eduards@devternity.com>",
+  "author": "Yada <hello@itconference.top>",
   "private": true,
   "scripts": {
     "dev": "cross-env webpack-dev-server --hot --mode=development",
