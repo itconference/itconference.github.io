@@ -7,6 +7,9 @@ conferences:
     city: Budapest        
     website: https://craft-conf.com
     description: CRAFT is about software craftsmanship, presenting which tools, methods, practices should be part of the toolbox of a modern developer and company, and serving as compass on new technologies, trends. You can learn from the best speakers and practitioners in the software development community. CRAFT team excels at everything they do – from organization to the content. Our team has attended the conference and can confirm attention to every detail.
+    scheduled: 
+        date: 7 May 2019
+        price: 400 – 1000
     tags: 
       - cross-discipline
       - software craftsmanship
@@ -40,7 +43,7 @@ conferences:
     website: https://devternity.com
     description: DevTernity is the top tech conference in Latvia. Organisers say that they turn developers into architects and engineering leaders since 2015. We spoke to attendees and attended the conference in 2017 and have to say that the conference is truly excellent. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is victim of its popularty — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
     scheduled: 
-        date: 30 Nov 2018
+        date: 6 December 2019
         price: 299 – 598     
     tags:
       - cross-discipline
@@ -73,6 +76,9 @@ conferences:
     city: Tallinn
     website: https://geekout.ee
     description: GeekOut is a two-day show for Java professionals. The conference is well-organized, has amazing venue and pretty stellar speakers lineup. GeekOut gathers ~600 participants every year and most of the feedback is extremely positive. The conference has much better cost/value ratio than other Java conferences in Northern Europe. We'd rank GeekOut even higher if the conference offered hands-on workshops.
+    scheduled: 
+        date: 26 Sep 2019
+        price: 500
     tags:
       - java
       - jvm
@@ -102,7 +108,7 @@ conferences:
     website: https://devoxx.be
     description: Devoxx (formerly named JavaPolis) is an annual community conference, created in 2001 by Stephan Janssen, organized by the Belgian Java User Group (BeJUG). The conference takes place every year in Belgium around November. With over 2,800 attendees in 2006, JavaPolis became the biggest vendor-independent Java conference in the world. Personally, we like Devoxx because it sets high standards for self and other Java conferences. 
     scheduled: 
-        date: 12 Nov 2018
+        date: 4 Nov 2019
         price: 525 – 795
     tags:
       - java
@@ -134,7 +140,7 @@ conferences:
     website: https://swanseacon.co.uk
     description: SwanseaCon is a one day, agile development and software craftmanship conference. SwanseaCon gives the right platform to gather cutting-edge information on technology from the best speakers and trainers of the industry. Taking into account great speakers lineup, the price is very appealing.
     scheduled: 
-        date: 10 Sep 2018
+        date: 9 Sep 2019
         price: 170
     tags:
       - software craftsmanship
@@ -156,8 +162,8 @@ conferences:
     website: https://www.buildstuff.lt/
     description: Build Stuff Lithuania is one of the largest software development events in Baltics. The conference is well-organized, has many good speakers and diversity of talks. We talked to the conference's participants and the vast majority has expressed interest to attend the conference again. We see the conference as "the dark horse" that is slowly (but steadily) approaching A-league.
     scheduled: 
-        date: 14 Nov 2018
-        price: 159 – 1159
+        date: 13 Nov 2019
+        price: 339 – 1300
     tags:
       - cross-discipline
     ratingBreakdown:
@@ -175,9 +181,6 @@ conferences:
     city: Berlin
     website: https://gotober.com
     description: GOTO Conference is a software development conference designed for developers, team leads, architects, and project managers and is organized "for developers by developers". The content is very diverse and thought-provoking. The conference also allows you to meet new people easily, because there is plenty of breaks and room available between sessions to have a chat with others and hang out at one of the exhibitioners booths.
-    scheduled: 
-        date: 29 Oct 2018
-        price: 549 – 2745
     tags:
       - cross-discipline
     ratingBreakdown:
@@ -196,9 +199,6 @@ conferences:
     city: Oslo
     website: https://javazone.no
     description: JavaZone is organized by javaBin, the Norwegian Java User Group. Its goal is to organize a community-driven conference for Java developers where they can learn new things, share knowledge, and socialize. JavaZone is one of the most visited Java conferences in Europe.
-    scheduled: 
-        date: 12 Sep 2018
-        price: 700
     tags:
       - java
       - jvm
@@ -218,7 +218,7 @@ conferences:
     website: https://theleaddeveloper.com
     description: As tech lead you have to be a great developer. But you also need to be a good team leader, be commercially astute, and stay on top of all the tech developments and trends coming over the horizon. With a balance of content across team, tools and tech, The Lead Developer conference is designed with the complexities of the job in mind. Join the community of tech leads, engineering managers and CTOs for two days of inspiring talks and networking opportunities. 
     scheduled: 
-        date: 27 Jun 2018
+        date: 11 Jun 2019
         price: 800 – 1370
     tags:
       - technical leadership
@@ -238,6 +238,9 @@ conferences:
     city: Riga
     website: https://rigadevdays.lv
     description: Riga Dev Days brings together the world class experts in Java, .NET, SQL Databases, Microservices and Cloud technologies to Riga for 3 days of sessions, workshops and showcases. At Riga Dev Days you will enjoy quality content in a comfortable atmosphere in a cinema theater. It's the best place for learning new technologies, sharing experience and meeting IT colleagues. Riga is easy to reach and is relatively cheap location. Riga Dev Days is offering compelling pricing. Unfortunately, attendees say that many talks are "filler talks" of low-to-medium quality.
+    scheduled: 
+        date: 29 May 2019
+        price: 149 – 398
     tags:
       - java
       - jvm
@@ -306,9 +309,6 @@ conferences:
     city: Malmö
     website: https://oredev.org
     description: Øredev is a blend of one day in-depth pre-conference workshops and three days of sessions. Even though the content is good, we find the conference overpriced.
-    scheduled: 
-        date: 19 Nov 2018
-        price: 1000 – 2400
     tags:
       - cross-discipline
     ratingBreakdown:
@@ -384,10 +384,7 @@ conferences:
     country: GB
     city: London
     website: https://jaxlondon.com
-    description: JAX London is a long (four-day) conference for software engineers with emphasis on Java. When attended JAX, we didn't notice neither passion, nor attention to details. Apart of keynotes, most talks are of average quality. The conference lacks interaction between attendees, speakers and organisers.
-    scheduled: 
-        date: 8 Oct 2018
-        price: 500 – 850    
+    description: JAX London is a long (four-day) conference for software engineers with emphasis on Java. When attended JAX, we didn't notice neither passion, nor attention to details. Apart of keynotes, most talks are of average quality. The conference lacks interaction between attendees, speakers and organisers.    
     tags:
       - cross-discipline
       - java      
@@ -440,9 +437,6 @@ conferences:
     city: Milan
     website: https://codemotionworld.com
     description: Codemotion Milan (and other conferences under the Codemotion brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed Codemotion excels at. We talked to attendees and the vast majority sees no passion in organization. We recommend choosing other cross-discipline conference.
-    scheduled: 
-        date: 29 Nov 2018
-        price: 230 – 390
     tags:
       - cross-discipline      
     ratingBreakdown:
@@ -460,9 +454,6 @@ conferences:
     city: Tallinn
     website: https://www.topconf.com
     description: Topconf Estonia (and other conferences under the TopConf brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed TopConf excels at. We talked to attendees and the vast majority agrees with our assessment. We do not recommend attending TopConf unless the quality is significantly improved.
-    scheduled: 
-        date: 20 Nov 2018
-        price: 300
     tags:
       - cross-discipline      
     ratingBreakdown:
