@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
   head
     - var title = "IT Conference Top — We make it easier to choose a tech conference."
-    - var desc = "Choosing a great developer conference is time-consuming. Too many conferences claim to be the best, but it's far from the truth. We make it easier to choose a tech conference by giving each conference rating from A+ (the best) to F- (the worst)."
+    - var desc = "Choosing a good developer conference has always been hard. We make it easier by giving each conference rating from A+ (the best) to F- (the worst)."
     meta(charset="UTF-8")
     title=title
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -64,32 +64,7 @@ html(lang="en")
 
       div.detail {
         height: 2em;
-      }
-    script.
-      "use strict";
-
-      !function() {
-        var t = window.driftt = window.drift = window.driftt || [];
-        if (!t.init) {
-          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-          t.factory = function(e) {
-            return function() {
-              var n = Array.prototype.slice.call(arguments);
-              return n.unshift(e), t.push(n), t;
-            };
-          }, t.methods.forEach(function(e) {
-            t[e] = t.factory(e);
-          }), t.load = function(t) {
-            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-            var i = document.getElementsByTagName("script")[0];
-            i.parentNode.insertBefore(o, i);
-          };
-        }
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('6hyry79ezi87');      
+      }   
   body
     script(type="text/javascript") (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49303816 = new Ya.Metrika2({ id:49303816, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2");
     noscript: div: img(src="https://mc.yandex.ru/watch/49303816" style="position:absolute; left:-9999px;" alt="")
@@ -108,7 +83,7 @@ html(lang="en")
           .container
             .columns
               .column.is-narrow
-                img.is-inline.logo.image.is-64x64(src="./primary-logo.png")
+                img.is-inline.logo.image.is-64x64(src="./primary-logo.png" alt="logo")
               .column
                 h1.title IT Conference Top
                 h2.subtitle We make it easier to choose a tech conference.
@@ -139,8 +114,8 @@ html(lang="en")
                             else
                               img(src=`https://avatars.io/twitter/${conference.twitter}`)
                         .media-content
-                          p.title.is-4: a.has-text-black(targe="_blank" href=conference.website)=conference.name
-                          p.subtitle.is-6: a.has-text-black.is-lowercase(href=`https://twitter.com/${conference.twitter}` target="_blank") @#{conference.twitter}
+                          h3.title.is-4: a.has-text-black(targe="_blank" href=conference.website rel=conference.follow ? "" : "nofollow" )=conference.name
+                          p.subtitle.is-6: a.has-text-black.is-lowercase(href=`https://twitter.com/${conference.twitter}` target="_blank" rel="nofollow") @#{conference.twitter}
                       nav.level
                         .level-item.has-text-centered
                           div
@@ -181,7 +156,7 @@ html(lang="en")
                               span  #{conference.city}
                         .level-item.has-text-centered
                           div
-                            p.heading Next event
+                            p.heading Date
                             if conference.scheduled
                               .detail=conference.scheduled.date
                             else 
@@ -199,9 +174,9 @@ html(lang="en")
                       p.content=conference.description
                       .buttons
                         if conference.video
-                          a.button.watchVideo(data-link=conference.video) Watch video
+                          a.button.watchVideo(data-link=conference.video rel="nofollow") Watch video
                         if conference.scheduled
-                          a.button.is-primary(target="_blank" href=conference.website) Register
+                          a.button.is-primary(target="_blank" href=conference.website rel="nofollow") Register
                         else
                           a.button.is-primary.is-outlined(target="_blank" href=conference.website) Visit website
                     .column.is-4(style="border-left: 1px solid #f5f5f5")
@@ -240,7 +215,7 @@ html(lang="en")
                             each speaker in conference.speakers
                               .column.is-narrow
                                 figure.image.is-48x48
-                                  a(target="_blank" href=`https://twitter.com/${speaker}`): img.avatar(src=`https://avatars.io/twitter/${speaker}`)
+                                  a(target="_blank" href=`https://twitter.com/${speaker}` rel="nofollow"): img.avatar(src=`https://avatars.io/twitter/${speaker}` alt=speaker)
     #modal.modal
       .modal-background
       .modal-content
@@ -251,11 +226,8 @@ html(lang="en")
     footer.footer
       .container
         .content.has-text-centered
-          p This service has been developed and maintained by the independent community of software developers from Sweden and Berlin. Too many conferences claim to be good, but it's far from the truth.
-          p 
-            | Our 
-            b opinionated 
-            | ranking formula take into account many factors. The factors include, but are not limited to – verified social network reviews (google, facebook, trustpilot, blog posts), sentiment analysis, what attendees say to us, customer service, price vs. quality ratio, our expert opinion (if we attended the conference).
+          p This service has been developed and maintained by the independent community of software developers from Sweden and Berlin. 
+          p Our opinionated ranking formula takes into account many factors. The factors include, but are not limited to – verified social network reviews (google, facebook, trustpilot, blog posts), sentiment analysis, what attendees say to us, customer service, price vs. quality ratio, our expert opinion (if we attended the conference).
           p We'd also like to thank amazing people who invest time in writing feedback and online reviews. Thanks to you, services like this can emerge.
           p 
             | Have questions? Want us to review your conference? 
