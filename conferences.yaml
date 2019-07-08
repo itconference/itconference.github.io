@@ -43,7 +43,7 @@ conferences:
     country: LV
     city: Riga    
     website: https://devternity.com
-    description: DevTernity is the top tech conference in Latvia. Organisers say that they turn developers into architects and engineering leaders since 2015. We spoke to attendees and attended the conference in 2017 and have to say that the conference is truly excellent. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is victim of its popularty — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
+    description: DevTernity is one of the most demanded tech conference in Europe. Organisers turn developers into architects and engineering leaders since 2015. We spoke to attendees and attended the conference in 2017 and have to say that the conference is truly excellent. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is victim of its popularty — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
     scheduled: 
         date: 6 December 2019
         price: 299 – 598     
@@ -238,7 +238,7 @@ conferences:
     rating: C+
     country: LV
     city: Riga
-    website: https://rigadevdays.lv
+    website: //rigadevdays.lv
     description: Riga Dev Days brings together the world class experts in Java, .NET, SQL Databases, Microservices and Cloud technologies to Riga for 3 days of sessions, workshops and showcases. At Riga Dev Days you will enjoy quality content in a comfortable atmosphere in a cinema theater. It's the best place for learning new technologies, sharing experience and meeting IT colleagues. Riga is easy to reach and is relatively cheap location. Riga Dev Days is offering compelling pricing. Unfortunately, attendees say that many talks are "filler talks" of low-to-medium quality.
     scheduled: 
         date: 29 May 2019
@@ -275,7 +275,7 @@ conferences:
     rating: C
     country: FR
     city: Paris
-    website: https://ncrafts.io
+    website: //ncrafts.io
     description: NewCrafts promises to challenge your pre-conceptions. The conference questions the way we develop, how we perceive our profession and craft. We attended the conference and the overall feeling is OK. Organisers are offering very compelling ticket price, but the problem lies in beautiful Paris – it's extremely expensive.
     tags:
       - software craftsmanship
@@ -291,7 +291,7 @@ conferences:
     rating: C
     country: SE
     city: Stockholm
-    website: https://jfokus.se
+    website: //jfokus.se
     description: Jfokus is the largest developer conference in Sweden. It's a great opportunity to learn directly from the experts and interact with peers in an engaging informal environment. The content quality is very high with many famous speakers. We believe that the conference is overpriced, though.
     tags:
       - java
@@ -309,7 +309,7 @@ conferences:
     rating: C
     country: SE
     city: Malmö
-    website: https://oredev.org
+    website: //oredev.org
     description: Øredev is a blend of one day in-depth pre-conference workshops and three days of sessions. Even though the content is good, we find the conference overpriced.
     tags:
       - cross-discipline
@@ -326,7 +326,7 @@ conferences:
     rating: C
     country: GB
     city: London
-    website: https://qconlondon.com
+    website: //qconlondon.com
     description: QCon London is a conference for senior software engineers and architects on the patterns, practices, and use cases leveraged by the world’s most innovative software shops. The conference is well-organized, the talks are extremely diverse, most of them are relevant. The conference also is offering hands-on workshops led by industry experts. We believe that the conference is overpriced and it's possible to find better, cheaper alternatives. Also the conference lacks interaction between attendees, speakers and organisers.
     scheduled: 
         date: 4 Mar 2019
@@ -346,7 +346,7 @@ conferences:
     rating: C
     country: NO
     city: Oslo
-    website: https://ndcoslo.com
+    website: //ndcoslo.com
     description: NDC is one of the worlds largest independent software conferences covering pretty much everything you need to know within software and agile development. Slight focus on .NET. 
     tags:
       - cross-discipline
@@ -364,7 +364,7 @@ conferences:
     rating: C
     country: GB
     city: London
-    website: https://ndc-london.com/
+    website: //ndc-london.com/
     description: NDC is one of the worlds largest independent software conferences covering pretty much everything you need to know within software and agile development. Slight focus on .NET.
     scheduled: 
         date: 28 Jan 2019
@@ -385,7 +385,7 @@ conferences:
     rating: C-
     country: GB
     city: London
-    website: https://jaxlondon.com
+    website: //jaxlondon.com
     description: JAX London is a long (four-day) conference for software engineers with emphasis on Java. When attended JAX, we didn't notice neither passion, nor attention to details. Apart of keynotes, most talks are of average quality. The conference lacks interaction between attendees, speakers and organisers.    
     tags:
       - cross-discipline
@@ -400,11 +400,11 @@ conferences:
 
 
   - name: code.talks
-    twitter: codetalks
+    twitter: codetalkshh
     rating: C-
     country: DE
     city: Hamburg
-    website: https://codetalks.de
+    website: //codetalks.de
     description: The developer conference for techies, coder and tech interested decision makers. The location and organization are very good. Organisers give attention to details. Unfortunatley, only about 50% of the talks are held in English, this is why we cannot recommend it as an international conference.
     tags:
       - cross-discipline
@@ -420,7 +420,7 @@ conferences:
     rating: D
     country: RO
     city: Bucharest
-    website: https://itakeunconf.com
+    website: //itakeunconf.com
     description: I T.A.K.E. is a relatively small software development conference with emphasis on software craftsmanship. Some good things are happening there such as kata lounge for mastering software craftsmanship and open space discussion. The content requires significant improvement, and organisers have to inject more energy and passion.
     tags:
       - cross-discipline
@@ -437,7 +437,7 @@ conferences:
     rating: D-
     country: IT
     city: Milan
-    website: https://codemotionworld.com
+    website: //codemotionworld.com
     description: Codemotion Milan (and other conferences under the Codemotion brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed Codemotion excels at. We talked to attendees and the vast majority sees no passion in organization. We recommend choosing other cross-discipline conference.
     tags:
       - cross-discipline      
@@ -454,7 +454,7 @@ conferences:
     rating: D-
     country: EE
     city: Tallinn
-    website: https://www.topconf.com
+    website: //www.topconf.com
     description: Topconf Estonia (and other conferences under the TopConf brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed TopConf excels at. We talked to attendees and the vast majority agrees with our assessment. We do not recommend attending TopConf unless the quality is significantly improved.
     tags:
       - cross-discipline      
