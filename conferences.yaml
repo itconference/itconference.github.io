@@ -13,7 +13,7 @@ conferences:
     tags: 
       - cross-discipline
       - software craftsmanship
-    rating: A+  
+    rating: A
     ratingBreakdown:
       talks: 5
       workshops: 5
@@ -35,6 +35,7 @@ conferences:
 
   - name: DevTernity
     twitter: devternity
+    emphasize: true
     logo: //devternity.com/images/logo_2017_filled.png
     video: //player.vimeo.com/video/247773795
     follow: true

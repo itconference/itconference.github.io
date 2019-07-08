@@ -81,14 +81,14 @@ html(lang="en")
       section.hero.is-primary
         .hero-body
           .container
-            .columns
+            .columns.is-mobile
               .column.is-narrow
                 img.is-inline.logo.image.is-64x64(src="./primary-logo.png" alt="logo")
               .column
-                h1.title IT Conference Top
-                h2.subtitle We make it easier to choose a tech conference.
+                h1.title.is-size-4-mobile IT Conference Top
+                h2.subtitle.is-size-6-mobile We make it easier to choose a tech conference.
               .column.has-text-right
-                h2.subtitle
+                h2.subtitle.is-size-6-mobile
                   i.fas.fa-users
                   |  Trusted by 
                   b 53,000 
@@ -100,7 +100,6 @@ html(lang="en")
             article.message.is-primary
               .message-body
                 p=desc
-            h2.subtitle.is-5 The best European developer conferences to attend in #{year}
             each conference in conferences
               .card
                 .card-content
@@ -175,7 +174,7 @@ html(lang="en")
                       .buttons
                         if conference.video
                           a.button.watchVideo(data-link=conference.video rel="nofollow") Watch video
-                        if conference.scheduled
+                        if conference.emphasize
                           a.button.is-primary(target="_blank" href=conference.website rel="nofollow") Register
                         else
                           a.button.is-primary.is-outlined(target="_blank" href=conference.website rel="nofollow") Visit website
@@ -189,7 +188,7 @@ html(lang="en")
                                 i.far.fa-star.has-text-grey-lighter
                           else
                             | —
-                        h1.is-4.title Detailed rating
+                        h3.is-4.title Detailed rating
                         .columns.is-gapless.is-marginless
                           .column.is-uppercase Talks  
                           .column: +rating(conference.ratingBreakdown.talks)
@@ -209,7 +208,7 @@ html(lang="en")
                           .column.is-uppercase Travel Expenses 
                           .column: +rating(conference.ratingBreakdown.travel)
                         if conference.speakers
-                          h1.is-4.title Who spoke here  
+                          h3.is-4.title Who spoke here  
                         if conference.speakers  
                           .columns.is-multiline.is-mobile
                             each speaker in conference.speakers
