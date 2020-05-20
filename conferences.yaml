@@ -9,23 +9,23 @@ conferences:
     rating: A
     country: LV
     city: Riga    
-    website: https://devternity.com
-    description: DevTernity is one of the most demanded tech conference in Europe. Organisers turn developers into architects and engineering leaders since 2015. We spoke to attendees and attended the conference in 2017 and have to say that the conference is truly excellent. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is victim of its popularty — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
+    website: //devternity.com
+    description: DevTernity is one of the most demanded developer conferences in Europe. We've been attending every year since 2015 and strongly believe it's the best conference available on the market. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is a victim of its popularity — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
     scheduled: 
-        date: 3 December 2020
-        price: 299 – 598     
+        date: 3-4 December 2020
+        price: 299 – 598
     tags:
-      - cross-discipline
-      - architecture
-      - clean code
-      - leadership
+      - Full-stack
+      - Software Architecture
+      - Clean Code
+      - Leadership
     ratingBreakdown:
       talks: 5
       workshops: 5
       org: 5
       location: 4
       ticket: 5
-      travel: 5      
+      travel: 5
     speakers:
       - sandromancuso
       - simonbrown
@@ -43,14 +43,14 @@ conferences:
     video: //player.vimeo.com/video/219539711
     country: HU
     city: Budapest        
-    website: https://craft-conf.com
-    description: CRAFT is about software craftsmanship, presenting which tools, methods, practices should be part of the toolbox of a modern developer and company, and serving as compass on new technologies, trends. You can learn from the best speakers and practitioners in the software development community. CRAFT team excels at everything they do – from organization to the content. Our team has attended the conference and can confirm attention to every detail.
+    website: //craft-conf.com
+    description: CRAFT is a full-stack developer conference that tries to cover many topics, including tools, methods, and practices that should be part of the toolbox of a modern developer and company. You can learn from the best speakers and practitioners in the software development community. CRAFT team excels at everything they do – from organization to the content. Our team has attended the conference and can confirm attention to every detail.
     scheduled: 
-        date: 13 Oct 2020
+        date: 13-16 Oct 2020
         price: 400 – 1000
     tags: 
-      - cross-discipline
-      - software craftsmanship
+      - Full-stack
+      - Software Craftsmanship
     rating: A
     ratingBreakdown:
       talks: 5
@@ -73,17 +73,17 @@ conferences:
 
   - name: GeekOut
     twitter: geekoutee
-    rating: B+
+    rating: B
     country: EE
     city: Tallinn
-    website: https://geekout.ee
-    description: GeekOut is a two-day show for Java professionals. The conference is well-organized, has amazing venue and pretty stellar speakers lineup. GeekOut gathers ~600 participants every year and most of the feedback is extremely positive. The conference has much better cost/value ratio than other Java conferences in Northern Europe. We'd rank GeekOut even higher if the conference offered hands-on workshops.
+    website: //geekout.ee
+    description: GeekOut is a two-day show for Java professionals. The conference is well-organized, the venue is great (it's some sort of a factory), and pretty stellar speakers lineup. GeekOut gathers ~600 participants every year and most of the feedback is extremely positive. The conference has a much better cost/value ratio than other Java conferences in Northern Europe. We'd rank GeekOut even higher if the conference offered hands-on workshops.
     # scheduled: 
     #     date: 26 Sep 2020
     #     price: 500
     tags:
-      - java
-      - jvm
+      - Java
+      - Kotlin
     ratingBreakdown:
       talks: 4
       org: 5
@@ -107,14 +107,14 @@ conferences:
     rating: B+
     country: Be
     city: Antwerp
-    website: https://devoxx.be
-    description: Devoxx (formerly named JavaPolis) is an annual community conference, created in 2001 by Stephan Janssen, organized by the Belgian Java User Group (BeJUG). The conference takes place every year in Belgium around November. With over 2,800 attendees in 2006, JavaPolis became the biggest vendor-independent Java conference in the world. Personally, we like Devoxx because it sets high standards for self and other Java conferences. 
+    website: //devoxx.be
+    description: Devoxx (formerly named JavaPolis) is an annual community conference, created in 2001 by Stephan Janssen, organized by the Belgian Java User Group (BeJUG). The conference takes place every year in Belgium around November. With over 2,800 attendees in 2006, JavaPolis became the biggest vendor-independent Java conference in the world. Personally, we like Devoxx because it sets high standards for itself and other Java conferences. Because the expo is full of sponsors, you will take away a lot of cool swag.
     scheduled: 
         date: 9 Nov 2020
         price: 525 – 795
     tags:
-      - java
-      - jvm 
+      - Java
+      - Kotlin
     ratingBreakdown:
       talks: 4
       org: 5
@@ -139,15 +139,15 @@ conferences:
     rating: B
     country: GB
     city: Swansea
-    website: https://swanseacon.co.uk
-    description: SwanseaCon is a one day, agile development and software craftmanship conference. SwanseaCon gives the right platform to gather cutting-edge information on technology from the best speakers and trainers of the industry. Taking into account great speakers lineup, the price is very appealing.
+    website: //swanseacon.co.uk
+    description: Swansea is a one day, agile development and software craftsmanship conference. Swansea gives the right platform to gather cutting-edge information on technology from the best speakers and trainers of the industry. Taking into account the great speakers' lineup, the price is very appealing.
     # scheduled: 
     #     date: 9 Sep 2021
     #     price: 170
     tags:
-      - software craftsmanship
-      - agility
-      - leadership
+      - Full-stack
+      - Agile
+      - Leadership
     ratingBreakdown:
       talks: 4
       org: 4
@@ -161,13 +161,13 @@ conferences:
     rating: B
     country: LT
     city: Vilnius
-    website: https://www.buildstuff.lt/
-    description: Build Stuff Lithuania is one of the largest software development events in Baltics. The conference is well-organized, has many good speakers and diversity of talks. We talked to the conference's participants and the vast majority has expressed interest to attend the conference again. We see the conference as "the dark horse" that is slowly (but steadily) approaching A-league.
+    website: //buildstuff.lt/
+    description: Build Stuff Lithuania is one of the largest software development events in Baltics. The conference is well-organized, has many good speakers and diversity of talks. We talked to the conference's participants and the vast majority have expressed interest to attend the conference again. We see the conference as "the dark horse" that is slowly (but steadily) approaching A-league.
     scheduled: 
         date: 11 Nov 2020
         price: 339 – 1300
     tags:
-      - cross-discipline
+      - Full-stack
     ratingBreakdown:
       talks: 4
       workshops: 4
@@ -181,13 +181,13 @@ conferences:
     rating: B
     country: DE
     city: Berlin
-    website: https://gotober.com
-    description: GOTO Conference is a software development conference designed for developers, team leads, architects, and project managers and is organized "for developers by developers". The content is very diverse and thought-provoking. The conference also allows you to meet new people easily, because there is plenty of breaks and room available between sessions to have a chat with others and hang out at one of the exhibitioners booths.
+    website: //gotober.com
+    description: GOTO Conference is a software development conference designed for developers, team leads, architects, and project managers and is organized "for developers by developers". The content is very diverse and thought-provoking. The conference also allows you to meet new people easily, because there is plenty of breaks and room available between sessions to have a chat with others and hang out at one of the expo booths.
     scheduled: 
         date: 26 Oct 2020
         price: 339 – 1300    
     tags:
-      - cross-discipline
+      - Full-stack
     ratingBreakdown:
       talks: 4
       org: 5
@@ -202,11 +202,11 @@ conferences:
     rating: B-
     country: NO
     city: Oslo
-    website: https://javazone.no
+    website: //javazone.no
     description: JavaZone is organized by javaBin, the Norwegian Java User Group. Its goal is to organize a community-driven conference for Java developers where they can learn new things, share knowledge, and socialize. JavaZone is one of the most visited Java conferences in Europe.
     tags:
-      - java
-      - jvm
+      - Java
+      - Kotlin
     ratingBreakdown:
       talks: 4
       org: 5
@@ -220,13 +220,13 @@ conferences:
     rating: B-
     country: GB
     city: London
-    website: https://theleaddeveloper.com
-    description: As tech lead you have to be a great developer. But you also need to be a good team leader, be commercially astute, and stay on top of all the tech developments and trends coming over the horizon. With a balance of content across team, tools and tech, The Lead Developer conference is designed with the complexities of the job in mind. Join the community of tech leads, engineering managers and CTOs for two days of inspiring talks and networking opportunities. 
+    website: //theleaddeveloper.com
+    description: As a tech lead, you have to be a great developer. But you also need to be a good team leader, be commercially astute, and stay on top of all the tech developments and trends coming over the horizon. With a balance of content across team, tools and tech, The Lead Developer conference is designed with the complexities of the job in mind. Join the community of tech leads, engineering managers and CTOs for two days of inspiring talks and networking opportunities. 
     scheduled: 
-        date: 1 Feb 2021
+        date: 1-2 Feb 2021
         price: 800 – 1370
     tags:
-      - technical leadership
+      - Leadership
     ratingBreakdown:
       talks: 4
       workshops: 4
@@ -242,13 +242,10 @@ conferences:
     country: LV
     city: Riga
     website: //rigadevdays.lv
-    description: Riga Dev Days brings together the world class experts in Java, .NET, SQL Databases, Microservices and Cloud technologies to Riga for 3 days of sessions, workshops and showcases. At Riga Dev Days you will enjoy quality content in a comfortable atmosphere in a cinema theater. It's the best place for learning new technologies, sharing experience and meeting IT colleagues. Riga is easy to reach and is relatively cheap location. Riga Dev Days is offering compelling pricing. Unfortunately, attendees say that many talks are "filler talks" of low-to-medium quality.
-    scheduled: 
-        date: 26 May 2020
-        price: 149 – 398
+    description: Riga Dev Days conference brings together experts in Java, .NET, SQL Databases, Microservices, and Cloud technologies to Riga for 3 days of sessions and workshops. At RDD you will enjoy quality content in a comfortable atmosphere in a cinema theater. It's the best place for learning new technologies, sharing experience, and meeting IT colleagues. Riga is easy to reach and is a relatively cheap location. RDD offers compelling prices. Unfortunately, attendees say that many talks are "filler talks" of low-to-medium quality.
     tags:
-      - java
-      - jvm
+      - Java
+      - Oracle
     ratingBreakdown:
       talks: 3
       org: 3
@@ -264,8 +261,8 @@ conferences:
     website: 
     description: GeeCON is Java conference with a lot of great speakers and the overwhelming Java climate. Here you can learn about Java and JVM based technologies, dynamic languages, enterprise architectures, patterns, distributed computing, software craftsmanship and mobile. We attended the conference and did not like the organization – quite messy process, average food, average location.
     tags:
-      - java
-      - jvm
+      - Java
+      - Kotlin
     ratingBreakdown:
       talks: 4
       org: 3
@@ -281,7 +278,7 @@ conferences:
     website: //ncrafts.io
     description: NewCrafts promises to challenge your pre-conceptions. The conference questions the way we develop, how we perceive our profession and craft. We attended the conference and the overall feeling is OK. Organisers are offering very compelling ticket price, but the problem lies in beautiful Paris – it's extremely expensive.
     tags:
-      - software craftsmanship
+      - Full-stack
     ratingBreakdown:
       talks: 4
       org: 4
@@ -300,8 +297,8 @@ conferences:
         date: 3 Feb 2020
         price: 1500
     tags:
-      - java
-      - jvm
+      - Java
+      - Kotlin
     ratingBreakdown:
       talks: 5
       workshops: 4
@@ -321,7 +318,7 @@ conferences:
         date: 3 Nov 2020
         price: 1200    
     tags:
-      - cross-discipline
+      - Full-stack
     ratingBreakdown:
       talks: 4
       workshops: 4
@@ -341,7 +338,7 @@ conferences:
         date: 4 Mar 2020
         price: 600 – 3200
     tags:
-      - cross-discipline
+      - Full-stack
     ratingBreakdown:
       talks: 4
       workshops: 5
@@ -361,8 +358,8 @@ conferences:
         date: 8 Jun 2020
         price: 550
     tags:
-      - cross-discipline
-      - .net   
+      - Full-stack
+      - .NET
     ratingBreakdown:
       talks: 4
       workshops: 5
@@ -382,8 +379,8 @@ conferences:
         date: 25 Jan 2021
         price: 1400 – 2200
     tags:
-      - cross-discipline
-      - .net                 
+      - Full-stack
+      - .NET           
     ratingBreakdown:
       talks: 4
       workshops: 5
@@ -403,8 +400,8 @@ conferences:
         date: 5 Oct 2020
         price: 1400 – 2200    
     tags:
-      - cross-discipline
-      - java      
+      - Full-stack
+      - Java
     ratingBreakdown:
       talks: 3
       workshops: 3
@@ -425,7 +422,7 @@ conferences:
         date: 29 Oct 2020
         price: 200
     tags:
-      - cross-discipline
+      - Full-stack
     ratingBreakdown:
       talks: 2
       org: 4
@@ -441,8 +438,8 @@ conferences:
     website: //itakeunconf.com
     description: I T.A.K.E. is a relatively small software development conference with emphasis on software craftsmanship. Some good things are happening there such as kata lounge for mastering software craftsmanship and open space discussion. The content requires significant improvement, and organisers have to inject more energy and passion.
     tags:
-      - cross-discipline
-      - software craftsmanship
+      - Full-stack
+      - Software Craftsmanship
     ratingBreakdown:
       talks: 2
       org: 2
@@ -458,7 +455,7 @@ conferences:
     website: //codemotionworld.com
     description: Codemotion Milan (and other conferences under the Codemotion brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed Codemotion excels at. We talked to attendees and the vast majority sees no passion in organization. We recommend choosing other cross-discipline conference.
     tags:
-      - cross-discipline      
+      - Full-stack
     ratingBreakdown:
       talks: 2
       workshops: 3
@@ -472,10 +469,10 @@ conferences:
     rating: D-
     country: EE
     city: Tallinn
-    website: //www.topconf.com
+    website: //topconf.com
     description: Topconf Estonia (and other conferences under the TopConf brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed TopConf excels at. We talked to attendees and the vast majority agrees with our assessment. We do not recommend attending TopConf unless the quality is significantly improved.
     tags:
-      - cross-discipline      
+      - Full-stack
     ratingBreakdown:
       talks: 2
       org: 2
