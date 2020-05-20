@@ -199,7 +199,7 @@ conferences:
   - name: JavaZone
     twitter: javazone
     video: //youtube.com/embed/OKZcwxcw85o
-    rating: B-
+    rating: B
     country: NO
     city: Oslo
     website: //javazone.no
@@ -217,7 +217,7 @@ conferences:
 
   - name: The Lead Developer
     twitter: theleaddev
-    rating: B-
+    rating: B
     country: GB
     city: London
     website: //theleaddeveloper.com
