@@ -175,7 +175,7 @@ html(lang="en")
                         if conference.video
                           a.button.watchVideo(data-link=conference.video rel="nofollow") Watch video
                         if conference.emphasize
-                          a.button.is-primary(target="_blank" href=conference.website rel="nofollow") Register
+                          a.button.is-primary(target="_blank" href=conference.website rel=conference.follow ? "" : "nofollow") Register
                         else
                           a.button.is-primary.is-outlined(target="_blank" href=conference.website rel="nofollow") Visit website
                     .column.is-4(style="border-left: 1px solid #f5f5f5")
