@@ -1,0 +1,50 @@
+h1 TOP 10 developer conferences of #{year} with ratings
+
+img(src="https://itconference.top/smile.png" width="500px")
+
+strong Many developer conferences exist, but only few worth attending.
+p To save your time, I compiled a list of developer conferences which my colleagues and I have attended. Then we gave each conference a rating from 
+  | 
+  code A+
+  |  (the best) to 
+  code F-
+  |  (the worst).
+
+p 
+  | Our formula is simple:
+  | 
+  code Rating = ❶ Content + ❷ Organization + ❸ Location.
+
+p The list has been updated in 
+  | 
+  code=year
+
+table
+  thead
+    tr
+      th Rating
+      th Topic
+      th Name
+      th Location
+      th Date
+      th Price
+  tbody
+    each conf in conferences
+      tr
+        td: img(src=`https://itconference.top/${conf.rating.toLowerCase()}.png` width="25px")
+        td=conf.tags[0]
+        td: strong: a(href=conf.website)=conf.name
+        td
+          img(src=`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/1x1/${conf.country.toLowerCase()}.svg` width="13px")
+          | 
+          | #{conf.city}
+        td=conf.scheduled.date
+        td=`${conf.scheduled.price} €`
+
+h3 Still in doubt?
+p 
+  | Check out the ultimate developer conference list
+  | 
+  strong: a(href="https://dev.events") dev.events
+  |.
+

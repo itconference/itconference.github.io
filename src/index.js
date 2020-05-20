@@ -1,32 +1,49 @@
-const { readFileSync } = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
+const { renderFile } = require('pug');
 const { resolve } = require('path');
 const { load } = require('js-yaml');
-const { countries } = require('countries-list');
-const Table = require('table-builder');
-
 const encoding = 'utf-8'
+const dayjs = require('dayjs');
+const rimraf = require('rimraf');
 const conferencesYaml = resolve(__dirname, '../conferences.yaml');
 const { conferences } = load(readFileSync(conferencesYaml, { encoding }));
 
-const someConferences = conferences
-.filter(({tags}) => tags.includes('Full-stack'))
-.filter(({scheduled}) => !!scheduled)
-.map(({name, rating, tags, city, country}) => ({
-  name,
-  rating,
-  topic: tags[0],
-  location: `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/1x1/${country.toLowerCase()}.svg" width="13px" /> ${city}, ${countries[country].name}`
-}))
+const confs = conferences
+  .filter(({tags}) => tags.includes('Full-stack'))
+  .filter(({scheduled}) => !!scheduled)
 
-const enoughConferencesForListings = someConferences.length >= 10
-if (!enoughConferencesForListings) {
-  throw `Cannot create dev.to and github.com listings. Not enough scheduled conferences. ${someConferences.length}/10`
+const html = renderFile(resolve(__dirname, './github.pug'), {
+  conferences: confs,
+  year: dayjs().year()
+});  
+
+const { GH_UNI_USER, GH_UNI_PW } = process.env
+const REPO = 'the-best-developer-conferences';
+const remote = `https://${GH_UNI_USER}:${GH_UNI_PW}@github.com/unicorncoding/${REPO}`;
+const local = `cloned/${REPO}`;
+
+rimraf.sync(local);
+require('simple-git/promise')()
+  .silent(true)
+  .clone(remote, local)
+  .then(() => updateAndPushReadme(html, local))
+  .catch((err) => console.error('failed: ', err));
+
+
+function updateAndPushReadme(body, repo) {
+  writeFileSync(`${repo}/README.md`, body);
+  return new Promise((resolve, reject) => {
+    require('simple-git')(repo)
+    .silent(true)
+    .addConfig('user.name', 'unicorncoding')
+    .addConfig('user.email', 'co.unicorn.ding@gmail.com')    
+    .commit(`update conference list ${dayjs()}`, 'README.md')
+    .push('origin', 'master', (err, ok) => {
+      if (err) {
+        reject(err)
+      } else {
+        resolve(ok)
+      }
+    });    
+  })
 }
-
-
-console.log(
-  new Table()
-  .setHeaders({rating: 'Rating', topic: 'Topic', name: 'Name', location: 'Location'})
-  .setData(someConferences)
-  .render());
-

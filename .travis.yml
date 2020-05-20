@@ -1,18 +1,22 @@
 language: node_js
 branches:
   only:
-   - master
+  - master
 before_install:
-  - npm i yarn -g
+- npm i yarn -g
 script:
-  - yarn
-  # - yarn create-ratings
-  - yarn build
+- yarn
+- yarn create-ratings
+- yarn build
 deploy:
   provider: pages
   local-dir: dist
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  
+  github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
     branch: master
+env:
+  global:
+  - secure: l02wY1492P658Jvo/BBLd3zyt192+/vxvtB17WN7bL41aSIQNMhKqObApgw+XLXcYoF0ddKYzLXKTl+GlqPCd0mKi9QsRe1fee7SKBbyk55w8MAmFt8oXRO37l9YCFgssBya3oy3zd7zNojpYdaT8BAFV/MxjiTyFsg3Bf/UMPBJKtBc1b4E0VtDFj1FseUsh+wlnw7qo97UQ4aEDSOZC5a2tv9tv3duRFvl5lse8iSqG9q1jOYTJo0V9dNoC37F5J4fLBYZrCxQh9sdSPTqPTB8448J8Q5vjWhMIKQU4iudK1nToeoUxcyjVbGit9ZifCiFWfD2iIOLxM85lAFSMFWU9SCMT8k7V8DKgetqlhuarIzAgHb3F4nuh0Y8HG1cr9hdQovg6iYvX7zOpLclq+cReAn7Xs9s+lV/Esz3zPo+2K4Z8tdhQE66+zmF8IPXxjafyudftaB+Fc2+5JMGBqSsJ9Kl2kUtEgDuAljmXWEcEqphiSQsx8szmqNRg3GJicGsi2nYmM5Bqk3LEbMbTTDkMSqRsp0hXUydsEBk/rusyiKYKD7aeMBwI0uGRvM9HBzkL1kVr79Mfe8ex9hza2Mqwaw7qZqJ5qgrs1flfoAnf4AHd9wHStJEt0FxZEjYEH+PEtl7qhMt1pKw7KehmD/PkNdkbHCuln/c8Iu+f6s=
+  - secure: YiFnqzc3r1LKq7BqZR6xD9OCkKjkbmqBM4cPH8ehVRNfyuJm8vGI7p7AuQZSfnBDdmhsuWOz659RJDGA8I1lPtwLNgyM/yJ9KdJNZqG0hhvtGLn1cxsgmOaGQwh2h0nFZhlccAh56di17hKsW8bo+XrsuQib8SBegpkuI4JS7+BbyYcJjecioTr6CW3XeuDAjtKOwmGvuzWXp/zlNtPVWq2SQE7g1H7WdyTf2kkRJFuNjveczOdARpMvtr774cW0/ZcfB2WU6hvHrkv4aI9XIjrPuxk1zZ22xSTbVNSLRfpYnRKYTrP61VAsP1p1V3McbEz/apPF/Fkn8HAvjTD2fFl8mBlqD2Eyq9fTetFx8NV+7xyXlLPWi9OZQmIQ7I0fB4NRvFUUwYXs4mBU5VP/8zKPxOP+9hKFHXdY7QRjjAnICgjT6A7p3mGbEI0Y6HDUfKaPx75LOKTIWkOF8XoCAr58FNdIOzVW0a1LZgNKbpXvuRkvCDr9YNIyeHN0Ju431AI1AQJfyqT4vCsN6v+pwiECvLQ7Rmeo9bfDKGwhdspXWxGBwvwZ3CXS8SV6d1+T3nQLSFMoZAd4LT7snqFeMAjIAqAN2Yv0WHp5Dkb9zwk3xQCjKYxxWTbsXlriN4Z53El812R4As+3mfB3wYlCNmo/fjufvm57rJUah/S2omU=

@@ -13,7 +13,7 @@ conferences:
     description: DevTernity is one of the most demanded developer conferences in Europe. We've been attending every year since 2015 and strongly believe it's the best conference available on the market. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is a victim of its popularity — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
     scheduled: 
         date: 3-4 Dec 2020
-        price: 299 – 598
+        price: 299 - 598
     tags:
       - Full-stack
       - Software Architecture
@@ -38,6 +38,38 @@ conferences:
       - xpinjection
       - mgrzejszczak
 
+  - name: AWS re:Invent
+    twitter: awsreinvent
+    rating: A
+    country: US
+    city: Las Vegas
+    website: //reinvent.awsevents.com
+    description: This is the biggest and by far the greatest event for developers interested in cloud technology, software architecture, and DevOps. Even though re:Invent is organized by Amazon is vendor-specific, we still highly recommend it, if your work background is not AWS. Amazon is putting so much money into this event, that it's worth every penny.
+    scheduled: 
+        date: 1-4 Dec 2020
+        price: 1600
+    tags:
+      - Full-stack
+      - DevOps
+    ratingBreakdown:
+      talks: 5
+      workshops: 5
+      org: 5
+      location: 5
+      ticket: 4
+      travel: 5
+    speakers:
+      - werner
+      - crichardson
+      - lizrice
+      - samnewman
+      - kelseyhightower
+      - tlberglund
+      - ajassy
+      - jeffbezos
+      - jeffbar
+      - danilop
+
   - name: Craft Conference
     twitter: craftconf
     video: //player.vimeo.com/video/219539711
@@ -47,7 +79,7 @@ conferences:
     description: CRAFT is a full-stack developer conference that tries to cover many topics, including tools, methods, and practices that should be part of the toolbox of a modern developer and company. You can learn from the best speakers and practitioners in the software development community. CRAFT team excels at everything they do – from organization to the content. Our team has attended the conference and can confirm attention to every detail.
     scheduled: 
         date: 13-16 Oct 2020
-        price: 400 – 1000
+        price: 400 - 1000
     tags: 
       - Full-stack
       - Software Craftsmanship
@@ -111,7 +143,7 @@ conferences:
     description: Devoxx (formerly named JavaPolis) is an annual community conference, created in 2001 by Stephan Janssen, organized by the Belgian Java User Group (BeJUG). The conference takes place every year in Belgium around November. With over 2,800 attendees in 2006, JavaPolis became the biggest vendor-independent Java conference in the world. Personally, we like Devoxx because it sets high standards for itself and other Java conferences. Because the expo is full of sponsors, you will take away a lot of cool swag.
     scheduled: 
         date: 9 Nov 2020
-        price: 525 – 795
+        price: 525 - 795
     tags:
       - Java
       - Kotlin
@@ -165,7 +197,7 @@ conferences:
     description: Build Stuff Lithuania is one of the largest software development events in Baltics. The conference is well-organized, has many good speakers and diversity of talks. We talked to the conference's participants and the vast majority have expressed interest to attend the conference again. We see the conference as "the dark horse" that is slowly (but steadily) approaching A-league.
     scheduled: 
         date: 11 Nov 2020
-        price: 339 – 1300
+        price: 339 - 1300
     tags:
       - Full-stack
     ratingBreakdown:
@@ -185,7 +217,7 @@ conferences:
     description: GOTO Conference is a software development conference designed for developers, team leads, architects, and project managers and is organized "for developers by developers". The content is very diverse and thought-provoking. The conference also allows you to meet new people easily, because there is plenty of breaks and room available between sessions to have a chat with others and hang out at one of the expo booths.
     scheduled: 
         date: 26 Oct 2020
-        price: 339 – 1300    
+        price: 339 - 1300    
     tags:
       - Full-stack
     ratingBreakdown:
@@ -224,7 +256,7 @@ conferences:
     description: As a tech lead, you have to be a great developer. But you also need to be a good team leader, be commercially astute, and stay on top of all the tech developments and trends coming over the horizon. With a balance of content across team, tools and tech, The Lead Developer conference is designed with the complexities of the job in mind. Join the community of tech leads, engineering managers and CTOs for two days of inspiring talks and networking opportunities. 
     scheduled: 
         date: 1-2 Feb 2021
-        price: 800 – 1370
+        price: 800 - 1370
     tags:
       - Leadership
     ratingBreakdown:
@@ -336,7 +368,7 @@ conferences:
     description: QCon London is a conference for senior software engineers and architects on the patterns, practices, and use cases leveraged by the world’s most innovative software shops. The conference is well-organized, the talks are extremely diverse, most of them are relevant. The conference also is offering hands-on workshops led by industry experts. We believe that the conference is overpriced and it's possible to find better, cheaper alternatives. Also the conference lacks interaction between attendees, speakers and organisers.
     scheduled: 
         date: 4 Mar 2020
-        price: 600 – 3200
+        price: 600 - 3200
     tags:
       - Full-stack
     ratingBreakdown:
@@ -377,7 +409,7 @@ conferences:
     description: NDC is one of the worlds largest independent software conferences covering pretty much everything you need to know within software and agile development. Slight focus on .NET.
     scheduled: 
         date: 25 Jan 2021
-        price: 1400 – 2200
+        price: 1400 - 2200
     tags:
       - Full-stack
       - .NET           
@@ -398,7 +430,7 @@ conferences:
     description: JAX London is a long (four-day) conference for software engineers with emphasis on Java. When attended JAX, we didn't notice neither passion, nor attention to details. Apart of keynotes, most talks are of average quality. The conference lacks interaction between attendees, speakers and organisers.    
     scheduled: 
         date: 5 Oct 2020
-        price: 1400 – 2200    
+        price: 1400 - 2200    
     tags:
       - Full-stack
       - Java
@@ -462,7 +494,27 @@ conferences:
       org: 2
       location: 3
       ticket: 3
-      travel: 4   
+      travel: 4
+      
+  - name: Codemotion Rome
+    twitter: CodemotionIT
+    rating: D
+    country: IT
+    city: Rome
+    website: //events.codemotion.com/conferences/rome/2020
+    description: Codemotion Rome (and other conferences under the Codemotion brand) is the best place to burn your company's money. With few exceptions, the content is pretty random and low-to-medium quality. There is nothing we have noticed Codemotion excels at. We talked to attendees and the vast majority sees no passion in organization. We recommend choosing other cross-discipline conference.
+    scheduled: 
+        date: 27-28 Nov 2020
+        price: 60 - 160
+    tags:
+      - Full-stack
+    ratingBreakdown:
+      talks: 2
+      workshops: 3
+      org: 2
+      location: 3
+      ticket: 3
+      travel: 4         
 
   - name: TopConf Tallinn
     twitter: topconfee

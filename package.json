@@ -14,7 +14,8 @@
     "countries-list": "^2.5.4",
     "dayjs": "^1.5.16",
     "pug-loader": "^2.4.0",
-    "table-builder": "^2.1.1"
+    "rimraf": "^3.0.2",
+    "simple-git": "^2.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
