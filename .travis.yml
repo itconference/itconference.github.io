@@ -6,6 +6,7 @@ before_install:
   - npm i yarn -g
 script:
   - yarn
+  # - yarn create-ratings
   - yarn build
 deploy:
   provider: pages

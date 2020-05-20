@@ -12,7 +12,7 @@ conferences:
     website: //devternity.com
     description: DevTernity is one of the most demanded developer conferences in Europe. We've been attending every year since 2015 and strongly believe it's the best conference available on the market. DevTernity focuses on the core areas that are paramount to your success — software architecture, clean code, and leadership. We took 1 star off because DevTernity is a victim of its popularity — the rooms are overflowing with people. At DevTernity you learn more than at other conferences (CRAFT and GOTO Berlin are perhaps the only rivals). DevTernity has the best cost/value ratio among competitors.
     scheduled: 
-        date: 3-4 December 2020
+        date: 3-4 Dec 2020
         price: 299 – 598
     tags:
       - Full-stack
@@ -391,7 +391,7 @@ conferences:
 
   - name: JAX London
     twitter: jaxlondon
-    rating: C-
+    rating: C
     country: GB
     city: London
     website: //jaxlondon.com
@@ -413,7 +413,7 @@ conferences:
 
   - name: code.talks
     twitter: codetalkshh
-    rating: C-
+    rating: C
     country: DE
     city: Hamburg
     website: //codetalks.de

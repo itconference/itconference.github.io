@@ -8,10 +8,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const yaml = require('js-yaml');
 const fs = require('fs');
 
-
-const CnameWebpackPlugin = require('cname-webpack-plugin');
-const webpack = require('webpack');
-
 const dest = path.resolve(__dirname, './dist');
 
 const conferences = yaml.load(fs.readFileSync(path.resolve(__dirname, 'conferences.yaml'), {encoding: 'utf-8'}))
