@@ -23,11 +23,11 @@ const remote = `https://${GH_UNI_USER}:${GH_UNI_PW}@github.com/unicorncoding/${R
 const local = `cloned/${REPO}`;
 
 rimraf.sync(local);
-require('simple-git/promise')()
+process.on('unhandledRejection', up => { throw up })
+require('simple-git')()
   .silent(true)
   .clone(remote, local)
   .then(() => updateAndPushReadme(html, local))
-  .catch((err) => console.error('failed: ', err));
 
 
 function updateAndPushReadme(body, repo) {
