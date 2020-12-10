@@ -111,7 +111,7 @@ html(lang="en")
                             if conference.logo
                               img(src=conference.logo)
                             else
-                              img(src=`https://twitter-avatar.now.sh/${conference.twitter}` alt=conference.twitter)
+                              img(src=`https://unavatar.now.sh/twitter/${conference.twitter}` alt=conference.twitter)
                         .media-content
                           h3.title.is-4: a.has-text-black(targe="_blank" href=conference.website rel=conference.follow ? "" : "nofollow" )=conference.name
                           p.subtitle.is-6: a.has-text-black.is-lowercase(href=`https://twitter.com/${conference.twitter}` target="_blank" rel="nofollow") @#{conference.twitter}
@@ -214,7 +214,7 @@ html(lang="en")
                             each speaker in conference.speakers
                               .column.is-narrow
                                 figure.image.is-48x48
-                                  a(target="_blank" href=`https://twitter.com/${speaker}` rel="nofollow"): img.avatar(src=`https://twitter-avatar.now.sh/${speaker}` alt=speaker)
+                                  a(target="_blank" href=`https://twitter.com/${speaker}` rel="nofollow"): img.avatar(src=`https://unavatar.now.sh/twitter/${speaker}` alt=speaker)
     #modal.modal
       .modal-background
       .modal-content
