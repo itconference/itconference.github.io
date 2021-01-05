@@ -10,7 +10,7 @@
     "create-ratings": "node ./src/index"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "countries-list": "^2.5.4",
     "dayjs": "^1.5.16",
     "pug-loader": "^2.4.0",
