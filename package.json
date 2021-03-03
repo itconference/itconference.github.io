@@ -31,7 +31,7 @@
     "image-webpack-loader": "^4.2.0",
     "js-yaml": "^3.12.0",
     "node-sass": "^4.9.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "pug-static-loader": "^2.0.0",
     "sass-loader": "^6.0.6",
